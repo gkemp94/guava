@@ -1,0 +1,12 @@
+<div class="cards">
+  {% for card in module.cards %}
+    <a href="#" class="cards__card">
+      <h4>
+        {{ card.header }}
+      </h4>
+      <p class="-large">
+        {{ card.content }}
+      </p>
+    </a>
+  {% endfor %}
+</div>

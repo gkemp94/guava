@@ -1,0 +1,48 @@
+[
+  {
+   "type": "group",
+   "id": "cards",
+   "label": "Cards",
+   "children": [
+    {
+     "type": "text",
+     "id": "cards.text",
+     "validation_regex": "",
+     "label": "Header",
+     "name": "header",
+     "default": "Card Header"
+    },
+    {
+     "type": "text",
+     "id": "cards.content",
+     "validation_regex": "",
+     "label": "Content",
+     "name": "content",
+     "default": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nesciunt earum! "
+    }
+   ],
+   "name": "cards",
+   "default": [
+    {
+     "header": "Webite Development",
+     "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nesciunt earum! "
+    },
+    {
+     "header": "SEO",
+     "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nesciunt earum! "
+    },
+    {
+     "header": "CMS Consulting",
+     "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nesciunt earum! "
+    },
+    {
+     "header": "Digital Marketing",
+     "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, nesciunt earum! "
+    }
+   ],
+   "occurrence": {
+    "default": 4,
+    "sorting_label_field": "card.header"
+   }
+  }
+ ]

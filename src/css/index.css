@@ -3,6 +3,7 @@
 :root {
   --font-family: 'Bai Jamjuree', sans-serif;
   --gray-900: #161513;
+  --white: #fff;
 }
 
 html {
@@ -33,4 +34,22 @@ h2 {
 
 h1 {
   font-size: 4.24rem;
+}
+
+
+/* Typography */
+h4 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+p.-large {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 500;
 }

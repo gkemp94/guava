@@ -8,5 +8,7 @@
 {% extends "./layouts/base.html" %}
 
 {% block body %}
-  {% module "module_16626567365002" path="/guava/modules/section-header", label="section-header" %}
+  {% dnd_area "Main Section" %}
+    {% include_dnd_partial path='../sections/services.html' context={} %}
+  {% end_dnd_area %}
 {% endblock body %}
