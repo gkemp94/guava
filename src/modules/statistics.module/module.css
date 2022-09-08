@@ -1,0 +1,35 @@
+.statistics {
+  display: flex;
+}
+
+.statistics__item {
+  padding: 32px;
+  flex: 1;
+  border: 2px solid var(--gray-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+}
+
+.statistics__item + .statistics__item {
+  border-left: 0px;
+}
+
+.statistics__number {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.statistics__description {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.statistics__item.-featured {
+  background-color: var(--gray-900);
+  color: var(--white);
+}

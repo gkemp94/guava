@@ -1,0 +1,12 @@
+<div class="statistics">
+  {% for stat in module.stats %}
+    <div class="statistics__item {% if stat.featured %}-featured{% endif %}">
+      <div class="statistics__number">
+        {{ stat.statistic }}
+      </div>
+      <div class="statistics__description">
+        {{ stat.description }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

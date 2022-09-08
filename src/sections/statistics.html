@@ -1,0 +1,13 @@
+<!--
+ templateType: section
+ label: Statistics Section
+ description: "A card section used for displaying statistics"
+ isAvailableForNewContent: true
+-->
+{% dnd_section max_width=960, padding={ "top": 24, "left": 24, "right": 24, "bottom": 24} %}
+  {% dnd_column width=12 %}
+    {% dnd_row %}
+      {% dnd_module path="../modules/statistics", label="Statistics" %}{% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}

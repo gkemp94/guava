@@ -1,0 +1,70 @@
+[
+  {
+   "children": [
+    {
+     "allow_new_line": false,
+     "default": "7+",
+     "display_width": null,
+     "id": "stats.statistic",
+     "label": "Statistic",
+     "locked": false,
+     "name": "statistic",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "allow_new_line": false,
+     "default": "Years of experience",
+     "display_width": null,
+     "id": "stats.description",
+     "label": "Description",
+     "locked": false,
+     "name": "description",
+     "required": false,
+     "show_emoji_picker": false,
+     "type": "text",
+     "validation_regex": ""
+    },
+    {
+     "type": "boolean",
+     "id": "stats.featured",
+     "default": false,
+     "display": "toggle",
+     "label": "Featured",
+     "name": "featured"
+    }
+   ],
+   "default": [
+    {
+     "statistic": "5+",
+     "featured": false,
+     "description": "Years of experience"
+    },
+    {
+     "statistic": "250",
+     "featured": true,
+     "description": "Happy Clients"
+    },
+    {
+     "statistic": "3",
+     "featured": false,
+     "description": "Awards of Excellence"
+    }
+   ],
+   "display_width": null,
+   "expanded": false,
+   "id": "stats",
+   "label": "Statistics",
+   "locked": false,
+   "name": "stats",
+   "occurrence": {
+    "default": 4,
+    "sorting_label_field": "stats.description"
+   },
+   "required": false,
+   "tab": "CONTENT",
+   "type": "group"
+  }
+ ]
