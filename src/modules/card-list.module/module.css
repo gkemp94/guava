@@ -1,0 +1,58 @@
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  counter-reset: section;
+}
+
+.card-list__item {
+  padding: 32px;
+  border: 2px solid var(--gray-900);
+  display: flex;
+  gap: 16px;
+  transition: var(--transition-duration);
+  transition-property: color, background-color;
+  transition-timing-function: ease-in-out;
+  align-items: center;
+}
+
+.card-list__item:hover {
+  background-color: var(--gray-900);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.card-list__item h4 {
+  font-size: 1.5rem;
+}
+
+.card-list__item p {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.card-list__meta {
+  text-transform: uppercase;
+  text-align: right;
+  flex: 1;
+  font-weight: 700;
+}
+
+.card-list__counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: var(--guava);
+  color: var(--white);
+}
+
+.card-list__counter::before {
+  counter-increment: section;
+  content: "" counter(section);
+}

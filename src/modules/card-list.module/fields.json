@@ -1,0 +1,75 @@
+[
+  {
+   "type": "choice",
+   "id": "79f7a8a2-d53d-7005-c02f-4bca0fa43c84",
+   "display": "select",
+   "choices": [
+    [
+     "ul",
+     "Unordered"
+    ],
+    [
+     "ol",
+     "Ordered"
+    ]
+   ],
+   "label": "List Type",
+   "name": "list_type",
+   "default": "ul",
+   "required": true,
+   "occurrence": null
+  },
+  {
+   "type": "group",
+   "id": "3b041af5-9f39-e714-b9ef-896a3a5d61a2",
+   "label": "List Items",
+   "children": [
+    {
+     "type": "text",
+     "id": "662c519d-78ef-56cc-1b6f-390c05090e56",
+     "validation_regex": "",
+     "label": "Title",
+     "name": "title",
+     "default": "List Item Title"
+    },
+    {
+     "type": "text",
+     "id": "42497cb6-50b7-096b-0f8f-4bbd818e95a9",
+     "validation_regex": "",
+     "label": "Description",
+     "name": "description",
+     "default": "Item Description"
+    },
+    {
+     "type": "text",
+     "id": "f0027742-5d4f-5275-999c-70257a8c2b4e",
+     "validation_regex": "",
+     "label": "Meta",
+     "name": "meta",
+     "default": "List Meta"
+    }
+   ],
+   "name": "list_items",
+   "default": [
+    {
+     "title": "List Item Title",
+     "description": "Item Description",
+     "meta": "List Meta"
+    },
+    {
+     "title": "List Item Title",
+     "description": "Item Description",
+     "meta": "List Meta"
+    },
+    {
+     "title": "List Item Title",
+     "description": "Item Description",
+     "meta": "List Meta"
+    }
+   ],
+   "occurrence": {
+    "sorting_label_field": "662c519d-78ef-56cc-1b6f-390c05090e56",
+    "default": 3
+   }
+  }
+ ]
