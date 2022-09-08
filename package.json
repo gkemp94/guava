@@ -1,0 +1,23 @@
+{
+  "name": "guava",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "hs watch ./src ./guava --initial-upload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkemp94/guava.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gkemp94/guava/issues"
+  },
+  "homepage": "https://github.com/gkemp94/guava#readme",
+  "devDependencies": {
+    "@hubspot/cms-cli": "^2.2.3"
+  }
+}

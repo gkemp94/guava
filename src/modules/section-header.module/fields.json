@@ -1,0 +1,22 @@
+[
+  {
+    "id": "title",
+    "default": "Section Header",
+    "label": "Title",
+    "locked": false,
+    "name": "title",
+    "required": false,
+    "type": "text",
+    "validation_regex": ""
+  },
+  {
+    "id": "description",
+    "default": "Content & Creation",
+    "label": "description",
+    "locked": false,
+    "name": "description",
+    "required": false,
+    "type": "text",
+    "validation_regex": ""
+  }
+]
