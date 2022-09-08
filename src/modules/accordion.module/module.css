@@ -1,0 +1,39 @@
+.accordion__item {
+  border: 2px solid var(--gray-900);
+}
+
+.accordion__item summary {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.accordion__item:hover {
+  color: var(--gray-700);
+}
+
+.accordion__item p {
+  padding: 0 2rem 2rem;
+}
+
+.accordion__item + .accordion__item {
+  border-top: 0px;
+} 
+
+.accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion__chevron {
+  height: 1em;
+  width: 1em;
+  transition-property: transform;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: ease-in-out;
+}
+
+.accordion__item[open] .accordion__chevron {
+  transform: scaleY(-1);
+}

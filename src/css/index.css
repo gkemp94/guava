@@ -3,7 +3,15 @@
 :root {
   --font-family: 'Bai Jamjuree', sans-serif;
   --gray-900: #161513;
+  --gray-700: #575249;
   --white: #fff;
+  --transition-duration: .2s;
+}
+
+@media (prefers-reduced-motion) {
+  :root {
+    transition-duration: 0s;
+  }
 }
 
 html {

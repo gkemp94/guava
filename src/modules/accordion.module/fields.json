@@ -1,0 +1,44 @@
+[
+  {
+   "type": "group",
+   "id": "accordions",
+   "label": "Field group",
+   "children": [
+    {
+     "type": "text",
+     "id": "accordions.title",
+     "validation_regex": "",
+     "label": "Title",
+     "name": "title",
+     "default": "Lorem Ipsum?"
+    },
+    {
+     "type": "text",
+     "id": "accordions.content",
+     "validation_regex": "",
+     "label": "Content",
+     "name": "content",
+     "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris a diam maecenas sed enim ut sem viverra."
+    }
+   ],
+   "name": "accordions",
+   "default": [
+    {
+     "title": "Lorem Ipsum?",
+     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris a diam maecenas sed enim ut sem viverra."
+    },
+    {
+     "title": "Lorem Ipsum?",
+     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris a diam maecenas sed enim ut sem viverra."
+    },
+    {
+     "title": "Lorem Ipsum?",
+     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris a diam maecenas sed enim ut sem viverra."
+    }
+   ],
+   "occurrence": {
+    "default": 3,
+    "sorting_label_field": "accordions.title"
+   }
+  }
+ ]
