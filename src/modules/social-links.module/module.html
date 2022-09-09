@@ -1,0 +1,17 @@
+<ul class="social-links">
+  {% for item in module.links %}
+    <li>
+      {% set href = item.social_link.url.href %}
+	    {% if item.social_link.url.type is equalto "EMAIL_ADDRESS" %}
+		    {% set href = "mailto:" + href %}
+	    {% endif %}
+	    <a href="{{ href }}"
+        class="social-links__link"
+        {% if item.social_link.open_in_new_tab %}target="_blank"{% endif %}
+        {% if item.social_link.rel %}rel="{{ item.social_link.rel }}"{% endif %}
+		  >
+		    <i class="fa-brands fa-{{ item.social_icon }}"></i>
+	    </a>
+    </li>
+  {% endfor %}
+</ul>

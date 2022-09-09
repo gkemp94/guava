@@ -10,7 +10,7 @@
 
 .card-list__item {
   padding: 32px;
-  border: 2px solid var(--gray-900);
+  border: 2px solid currentColor;
   display: flex;
   gap: 16px;
   transition: var(--transition-duration);

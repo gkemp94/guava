@@ -13,5 +13,17 @@
     {% include_dnd_partial path='../sections/faq.html' context={} %}
     {% include_dnd_partial path='../sections/statistics.html' context={} %}
     {% include_dnd_partial path='../sections/process.html' context={} %}
+
+    {% dnd_section max_width=960, padding={ "top": 24, "left": 24, "right": 24, "bottom": 24} %}
+      {% dnd_column width=12 %}
+        {% dnd_row margin={ "top":64, "bottom": 64 } %}
+          {% dnd_module path="../modules/section-header", label="FAQ Section Header" %}{% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
+          {% dnd_module path="../modules/social-links", label="Social Links" %}{% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+    {% end_dnd_section %}
+    
   {% end_dnd_area %}
 {% endblock body %}

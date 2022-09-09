@@ -1,0 +1,125 @@
+[
+  {
+   "type": "group",
+   "id": "links",
+   "label": "Links",
+   "children": [
+    {
+     "type": "link",
+     "id": "links.social_link",
+     "default": {
+      "url": {
+       "content_id": null,
+       "type": "EXTERNAL",
+       "href": ""
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
+     },
+     "supported_types": [
+      "EXTERNAL",
+      "CONTENT",
+      "FILE",
+      "EMAIL_ADDRESS",
+      "BLOG",
+      "CALL_TO_ACTION"
+     ],
+     "label": "Social Link",
+     "name": "social_link"
+    },
+    {
+     "type": "choice",
+     "id": "links.social_icon",
+     "display": "select",
+     "choices": [
+      [
+       "tiktok",
+       "TikTok"
+      ],
+      [
+       "facebook",
+       "Facebook"
+      ],
+      [
+       "twitter",
+       "Twitter"
+      ],
+      [
+       "github",
+       "GitHub"
+      ],
+      [
+       "instagram",
+       "Instagram"
+      ],
+      [
+       "pinterest",
+       "Pinterest"
+      ],
+      [
+       "youtube",
+       "YouTube"
+      ],
+      [
+       "medium",
+       "Medium"
+      ],
+      [
+       "spotify",
+       "Spotify"
+      ],
+      [
+       "linkedin",
+       "LinkedIn"
+      ]
+     ],
+     "label": "Social Icon",
+     "name": "social_icon",
+     "default": "facebook"
+    }
+   ],
+   "name": "links",
+   "default": [
+    {
+     "social_link": {
+      "url": {
+       "content_id": null,
+       "type": "EXTERNAL",
+       "href": ""
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
+     },
+     "social_icon": "facebook"
+    },
+    {
+     "social_link": {
+      "url": {
+       "content_id": null,
+       "type": "EXTERNAL",
+       "href": ""
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
+     },
+     "social_icon": "twitter"
+    },
+    {
+     "social_link": {
+      "url": {
+       "content_id": null,
+       "type": "EXTERNAL",
+       "href": ""
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
+     },
+     "social_icon": "instagram"
+    }
+   ],
+   "occurrence": {
+    "sorting_label_field": "links.social_icon",
+    "default": 3
+   }
+  }
+ ]

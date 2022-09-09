@@ -1,5 +1,5 @@
 .accordion__item {
-  border: 2px solid var(--gray-900);
+  border: 2px solid currentColor;
 }
 
 .accordion__item summary {

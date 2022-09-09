@@ -1,0 +1,26 @@
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: ease-in-out;
+}
+
+.social-links__link:hover {
+  color: var(--guava);
+}
+
+.social-links__link svg {
+  height: 1.5rem;
+}
+

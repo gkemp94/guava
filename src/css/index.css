@@ -62,3 +62,9 @@ p.-large {
   line-height: 2rem;
   font-weight: 500;
 }
+
+/* Global Sections */
+.footer {
+  background-color: var(--gray-900);
+  color: var(--white);
+}
