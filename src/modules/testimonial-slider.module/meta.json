@@ -1,6 +1,8 @@
 {
-  "label": "Statistics",
-  "css_assets": [],
+  "label": "Testimonial Slider",
+  "css_assets": [{
+    "path": "../../css/carousel.css"
+  }],
   "external_js": [],
   "global": false,
   "help_text": "",
@@ -9,7 +11,9 @@
     "BLOG_POST",
     "BLOG_LISTING"
   ],
-  "js_assets": [],
+  "js_assets": [{
+    "path": "../../js/carousel.js"
+  }],
   "other_assets": [],
   "smart_type": "NOT_SMART",
   "tags": [],

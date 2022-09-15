@@ -1,0 +1,109 @@
+.carousel * {
+  box-sizing: border-box;
+}
+
+.carousel {
+  /* Define Variables */
+  --carousel-gutters: 4rem;
+  --carousel-scrollbar-gutters: 1.75rem;
+  --carousel-pagination-size: 3rem;
+
+  display: grid;
+  grid-template-columns: var(--carousel-gutters) 1fr var(--carousel-gutters);
+  grid-template-rows: 1fr var(--carousel-pagination-size);
+}
+
+.carousel__slides {
+  grid-row: 1;
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: var(--carousel-gutters);
+
+  padding-block: .5rem var(--carousel-scrollbar-gutters);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--carousel-gutters);
+  padding-inline: var(--carousel-gutters);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .carousel__slides {
+    scroll-behavior: smooth;
+  }
+}
+
+.carousel__slide {
+  scroll-snap-align: center;
+}
+
+.carousel__controls {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: var(--carousel-gutters);
+  display: contents;
+}
+
+.carousel__controls .carousel__control {
+  margin-block-end: var(--carousel-scrollbar-gutters);
+}
+
+.carousel__control {
+  grid-row: 1;
+  place-self: center;
+  background: transparent;
+  color: currentColor;
+  inline-size: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.carousel__control:hover {
+  opacity: .25;
+}
+
+.carousel__next {
+  grid-column: 3;
+}
+
+.carousel__previous {
+  grid-column: 1;
+}
+
+/* Pagination */
+.carousel__pagination {
+  grid-column: 1 / -1;
+  place-self: center;
+
+  display: grid;
+  grid-auto-flow: column;
+  gap: .5rem;
+
+  max-inline-size: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+
+  padding-block: .5em;
+  padding-inline: 1em;
+
+  scrollbar-width: none;
+}
+
+.carousel__pagination button {
+  border: 1px solid transparent;
+  background-color: grey;
+  inline-size: .5rem;
+}
+
+.carousel__pagination button[aria-selected="true"] {
+  background: var(--color-accent);
+}

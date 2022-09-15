@@ -1,0 +1,28 @@
+{% macro carousel(items, render) %}
+  <div class="carousel" tabindex="-1" aria-roledescription="carousel">
+    <div class="carousel__controls">
+      <button class="carousel__control carousel__previous" aria-controls="carousel__controls" aria-label="Previous Button" title="Previous Button" >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
+        </svg>        
+      </button>
+      <button class="carousel__control carousel__next" aria-controls="carousel__controls" aria-label="Next Button" title="Next Button" >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+        </svg>        
+      </button>
+    </div>
+    <div class="carousel__slides" role="group" aria-label="Items Scroller" aria-live="Polite">
+      {% for item in items %}
+        <div class="carousel__slide" aria-label="{{ loop.index }} of {{ items|length }}" aria-roledescription="item">
+          {{ render(item) }}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="carousel__pagination">
+      {% for item in items %}
+        <button type="button" role="tab" aria-selected="{{ loop.first }}" data-index="{{ loop.index0 }}" aria-controls="carousel-item-{{ loop.index }}" aria-posinset="{{ loop.index }}" aria-setsize="{{ items|length }}" class="carousel__control"></button>
+      {% endfor %}
+    </div>
+  </div>
+{% endmacro %}

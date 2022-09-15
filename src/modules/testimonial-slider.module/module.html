@@ -1,0 +1,9 @@
+{% from "../../macros/carousel.html" import carousel %}
+
+{% set items = [{ title:'hello world' }, { title:'hello world 2' }] %}
+
+{% macro render(item) %}
+  {{ item.title }}
+{% endmacro %}
+
+{{ carousel(items, render) }}
